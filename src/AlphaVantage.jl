@@ -1,9 +1,7 @@
-VERSION >= v"1.6.0"
-
 module AlphaVantage
 
-using Compat
 using ArgCheck
+using Compat
 using DelimitedFiles
 using HTTP
 using JSON
@@ -23,7 +21,7 @@ include("economic_indicators.jl")
 include("commodities.jl")
 
 # avclient
-export key, AlphaVantageClient, AlphaVantageResponse
+export key, AlphaVantageClient, AlphaVantageResponse, PremiumEndpointError
 
 # stock_time_series
 export
